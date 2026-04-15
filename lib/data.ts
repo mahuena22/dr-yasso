@@ -1,3 +1,5 @@
+import { title } from 'process'
+
 // ─── Types ──────────────────────────────────────────────────────────────────
 export interface Article {
     id: string
@@ -47,10 +49,10 @@ export const SITE_CONFIG = {
 export const TIMELINE: TimelineItem[] = [
     {
         year: '1983',
-        title: 'Naissance à Cotonou',
+        title: 'Naissance à Kouarfa, Bénin',
         description:
-            'Dr Désiré YASSO naît le 16 avril 1983 à Cotonou, Bénin. Il grandit dans une famille structurée qui lui inculque les valeurs de travail, de rigueur et de service public.',
-        location: 'Cotonou, Bénin',
+            'Dr Désiré YASSO naît le 16 avril 1983 à Kouarfa, Bénin. Il grandit dans une famille structurée qui lui inculque les valeurs de travail, de rigueur et de service public.',
+        location: 'Kouarfa, Bénin',
     },
     {
         year: '2003',
@@ -80,13 +82,7 @@ export const TIMELINE: TimelineItem[] = [
             "Débute sa carrière professionnelle chez Deloitte Bénin, où il progresse d'assistant à chef de mission d'audit. Auditeur de nombreuses grandes entreprises du secteur public et privé béninois.",
         location: 'Deloitte Bénin',
     },
-    {
-        year: '2009',
-        title: 'Master 1 en Audit et Contrôle de Gestion',
-        description:
-            'Obtient un Master 1 en Audit et Contrôle de Gestion de Pigier Bénin, approfondissant ses expertise en gouvernance administrative.',
-        location: 'Pigier Bénin',
-    },
+
     {
         year: '2010',
         title: 'Master en Management (BAC+5)',
@@ -98,7 +94,7 @@ export const TIMELINE: TimelineItem[] = [
         year: '2011-2014',
         title: 'Doctorat en Sciences de Gestion',
         description:
-            "Doctorant puis Docteur en Sciences de Gestion avec mention 'Management' et spécialité 'Gouvernance d'entreprise - Audit et Contrôle' à l'Université Paris 1 Panthéon-Sorbonne. Thèse soutenue le 28 janvier 2014. Chercheur au sein du GREGOR et HEC-IAE Paris.",
+            "Docteur en Science de Gestion avec mention Management spécialité Gouvernance d'entreprise - Audit et Contrôle' à l'Université Paris 1 Panthéon-Sorbonne. Thèse soutenue le 28 janvier 2014. Chercheur au sein du GREGOR Paris.",
         location: 'Université Paris 1 Panthéon-Sorbonne',
     },
     {
@@ -112,7 +108,7 @@ export const TIMELINE: TimelineItem[] = [
         year: "2017-Aujourd'hui",
         title: 'Inspecteur Général (depuis 14 juillet 2017)',
         description:
-            "Promu Inspecteur Général du Ministère des Affaires étrangères du Bénin. 18 ans d'expérience cumulée en audit, contrôle de gestion et gouvernance d'entreprise. Expert en gouvernance publique, audit social et stratégie d'entreprise.",
+            "Promu Inspecteur Général du Ministère des Affaires étrangères du Bénin. Plusieurs années d'expérience cumulée en audit, guide les décisions stratégiques, et gouvernance d'entreprise. Expert en gouvernance publique, audit social et stratégie d'entreprise.",
         location: 'MAE Bénin, Cotonou',
     },
     {
@@ -134,63 +130,82 @@ export const TIMELINE: TimelineItem[] = [
 export const VALUES: Value[] = [
     {
         icon: '⚖️',
-        title: "Gouvernance d'Entreprise",
+        title: 'intégrité ',
         description:
-            "Expert en gouvernance d'entreprise, audit et contrôle. Garantir la transparence, l'intégrité et la responsabilité dans la gestion publique et privée.",
+            " Engagement inébranlable envers l'intégrité, la transparence et l'éthique dans toutes les actions professionnelles et publiques.",
     },
     {
         icon: '📊',
-        title: 'Audit & Contrôle',
+        title: 'Compétence',
         description:
-            "18 ans d'expertise en audit comptable, financier et de performance. Auditeur de plus de 30 grandes entreprises africaines et ministères gouvernementaux.",
+            ' Expertise reconnue en audit, gouvernance publique et gestion organisationnelle, avec plusieurs années dexpérience  dans des contextes complexes.',
     },
     {
         icon: '📚',
-        title: 'Recherche Scientifique',
+        title: 'Rigueur',
         description:
-            "Directeur du GIRO Bénin, chercheur à Paris 1 Panthéon-Sorbonne. Publications scientifiques sur la gouvernance publique, la corruption et l'efficacité administrative.",
+            " Approche méthodique et rigoureuse dans l'analyse, la recherche et la prise de décision, assurant des résultats fiables et de haute qualité.",
     },
     {
         icon: '🏛️',
-        title: 'Gestion Publique',
+        title: 'Loyauté',
         description:
-            "Inspecteur Général chargé de l'audit de la gestion administrative et financière de tous les postes diplomatiques et consulaires béninois à l'étranger.",
+            ' Loyauté indéfectible envers les institutions publiques béninoises, avec un engagement profond pour le service public et le développement national.',
     },
     {
         icon: '🤝',
-        title: 'Développement Organisationnel',
+        title: 'Action',
         description:
-            "Expert en gestion des ressources humaines publiques, climat social et développement organisationnel. Engagement envers l'excellence administrative.",
-    },
-    {
-        icon: '🌍',
-        title: 'Affaires Étrangères',
-        description:
-            'Expertise en politique étrangère, diplomatie et coopération internationale. Au cœur de la ministère en charge des relations extérieures du Bénin.',
+            " Engagé dans l'action concrète pour le développement du Bénin, contribuant activement à la mise en œuvre de politiques publiques efficaces.",
     },
 ]
 
 export const ARTICLES: Article[] = [
     {
         id: '1',
-        slug: 'audit-ambassades-bj',
-        title: 'Audit de conformité financière des Ambassades du Bénin',
+        slug: ' installation-conseil-communal-toucountouna',
+        title: 'Installation du Conseil Communal de Toucountouna',
         excerpt:
-            "L'Inspecteur Général Désiré YASSO supervise un audit complet de la gestion administrative et financière de toutes les Ambassades et Consulats généraux du Bénin à l'étranger, garantissant la transparence et la conformité aux normes internationales.",
-        content: 'Audit complet...',
-        category: 'Audit',
+            "Dr Désiré YASSO participe à l'installation du Conseil Communal de Toucountouna, marquant une étape importante dans la gouvernance locale et le développement de la 4e circonscription électorale.",
+        content: ' Installation du Conseil Communal de Toucountouna...',
+        category: ' Gouvernance',
+        date: '13 février 2026',
+        readTime: 4,
+        image: '/image/Article5.jpeg',
+    },
+    {
+        id: '2',
+        slug: "installation-coordination-d'arrondissement",
+        title: "Installation de la coordination  d'arrondissement de campagne",
+        excerpt:
+            "Dr Désiré YASSO a procédé à l'installation de la coordination d'arrondissement de campagne du DUO WADAGNI-TALATA à Kouarfa, commune de Toucountouna",
+        content:
+            "Dr Désiré YASSO a procédé à l'installation de la coordination d'arrondissement de campagne du DUO WADAGNI-TALATA à Kouarfa, commune de Toucountouna...",
+        category: ' Gouvernance',
+        date: '26 mars 2026',
+        readTime: 5,
+        image: '/image/article6.jpeg',
+    },
+    {
+        id: '3',
+        slug: 'audit-ambassades-bj',
+        title: 'Parainage de la fete des tamtams à Kokokou dans la commune de thoucountoumin',
+        excerpt:
+            ' Dr Désiré YASSO parraine la fête des tamtams à Kokokou, commune de Thoucountoumin, célébrant la culture locale et renforçant les liens communautaires dans la 4e circonscription électorale.',
+        content: ' Parainage de la fete des tamtams à Kokokou...',
+        category: ' Audit',
         date: '15 mars 2026',
         readTime: 5,
         image: '/image/img1.jpeg',
         featured: true,
     },
     {
-        id: '2',
-        slug: 'gouvernance-entreprises-publiques',
-        title: 'Amélioration de la gouvernance des entreprises publiques béninoises',
+        id: '4',
+        slug: ' conseil-communal-thoucountoumin',
+        title: 'Participation au premier conseil communale de la commune de thoucountoumin',
         excerpt:
-            "Dr YASSO préside des réunions de session sur la gouvernance d'entreprise visant à renforcer le contrôle interne et la performance des institutions publiques béninoises, conformément aux standards internationaux.",
-        content: 'Gouvernance publique...',
+            "Dr Désiré YASSO participe activement au premier conseil communal de la commune de thoucountoumin en tant que conseiller communal, contribuant à l'élaboration de politiques locales pour le développement de la 4e circonscription électorale.",
+        content: ' Participation active...',
         category: 'Gouvernance',
         date: '28 février 2026',
         readTime: 6,
@@ -198,52 +213,29 @@ export const ARTICLES: Article[] = [
         featured: true,
     },
     {
-        id: '3',
-        slug: 'publications-scientifiques-gouvernance',
-        title: 'Nouvelles publications scientifiques sur la gouvernance en Afrique',
+        id: '5',
+        slug: ' election-conseiller-thoucountoumin',
+        title: 'Election comme conseiller à la mairie de thoucountoumin .',
         excerpt:
-            "Dr Désiré YASSO et ses collègues du GIRO Bénin publient des travaux de recherche sur la gouvernance publique, l'audit et le contrôle en contexte africain, contribuant au débat académique international.",
+            ' Dr Désiré YASSO élu conseiller communal à la mairie de Thoucountoumin, renforçant son engagement local pour le développement de la 4e circonscription électorale.',
         content: 'Publications scientifiques...',
-        category: 'Recherche',
-        date: '10 février 2026',
+        category: ' Gouvernance',
+        date: '11 janvier 2026',
         readTime: 4,
         image: '/image/img3.jpeg',
     },
     {
-        id: '4',
-        slug: 'formation-auditeurs-diplomates',
-        title: 'Programme de formation pour auditeurs et diplomates',
+        id: '6',
+        slug: 'mouvement-jeunes-union-progressiste-atacora',
+        title: 'Lancement du mouvement départemental des jeunes de l&apos;union progressiste de l&apos;Atacora',
         excerpt:
-            "L'Inspecteur Général dirige un programme de formation accrédité pour renforcer les compétences des auditeurs internes et des diplomates béninois en audit, contrôle de gestion et gestion financière.",
-        content: 'Formation professionnelle...',
-        category: 'Formation',
+            ' Dr Désiré YASSO lance le mouvement départemental des jeunes de l&apos;Union Progressiste de l&apos;Atacora, mobilisant la jeunesse pour un engagement politique actif et le développement de la région.',
+        content:
+            ' Lancement du mouvement départemental des jeunes de l&apos;union progressiste de l&apos;Atacora...',
+        category: 'Gouvernance',
         date: '22 janvier 2026',
         readTime: 5,
         image: '/image/img4.jpeg',
-    },
-    {
-        id: '5',
-        slug: 'audit-postes-diplomatiques',
-        title: 'Audit complet des opérations aux postes diplomatiques',
-        excerpt:
-            'Supervisé par Dr YASSO, un audit complet des opérations financières et administratives des postes diplomatiques et consulaires du Bénin assure la conformité budgétaire et la transparence.',
-        content: 'Audit diplomatique...',
-        category: 'Audit',
-        date: '5 janvier 2026',
-        readTime: 4,
-        image: '/image/img5.jpeg',
-    },
-    {
-        id: '6',
-        slug: 'giro-initiative-recherche',
-        title: 'GIRO Bénin : Une initiative pour la recherche organizational',
-        excerpt:
-            'En tant que Directeur du GIRO Bénin, Dr YASSO promeut la recherche interdisciplinaire sur les organisations, contribuant à la formation des leaders africains en gouvernance et gestion.',
-        content: 'Recherche interdisciplinaire...',
-        category: 'Recherche',
-        date: '18 décembre 2025',
-        readTime: 5,
-        image: '/image/img6.jpeg',
     },
 ]
 
@@ -259,6 +251,6 @@ export const CATEGORIES = [
 export const STATS = [
     { number: '18+', label: "Années d'expérience en audit", icon: '📊' },
     { number: '30+', label: 'Entreprises & ministères auditées', icon: '✅' },
-    { number: '9', label: 'Ambassades & Consulats supervisés', icon: '🌍' },
-    { number: '3', label: 'Diplômes avancés (Master+Doctorat)', icon: '🎓' },
+    { number: '30+', label: 'Ambassade & Consulat supervisés', icon: '🌍' },
+    { number: '1', label: 'Doctorat', icon: '🎓' },
 ]

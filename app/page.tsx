@@ -63,32 +63,33 @@ export default function HomePage() {
                             <p>
                                 Dr Désiré YASSO est Inspecteur Général du
                                 Ministère des Affaires Étrangères et de la
-                                Coopération du Bénin depuis juillet 2017.
+                                Coopération du Bénin depuis juillet 2015.
                                 Titulaire d&apos;un Doctorat en Sciences de
                                 Gestion de l&apos;Université Paris 1
-                                Panthéon-Sorbonne, il apporte 18 ans
-                                d&apos;expérience en audit, contrôle de gestion
-                                et gouvernance d&apos;entreprise.
+                                Panthéon-Sorbonne, il justifie d&apos;une
+                                expérience en audit, contrôle de gestion et
+                                gouvernance d&apos;entreprise.
                             </p>
                             <p>
-                                Fort d&apos;une expertise reconnue dans le
-                                secteur public et privé, il supervise
-                                l&apos;audit de la gestion administrative,
-                                comptable et financière du Ministère, y compris
-                                toutes les Ambassades et Consulats généraux du
-                                Bénin à l&apos;étranger.
+                                Fort d&apos;une expertise reconnue dans les
+                                secteurs public et privé, il dirige le
+                                département d&apos;audit de la gestion
+                                administrative, comptable et financière du
+                                Ministère, y compris toutes les Ambassades et
+                                Consulats généraux du Bénin à l&apos;étranger.
                             </p>
                             <p>
-                                Directeur du Groupe Interdisciplinaire de
-                                Recherches sur les Organisations (GIRO Bénin),
-                                il s&apos;engage aussi dans la recherche
-                                scientifique et la formation des futurs leaders
-                                africains en gouvernance et gestion publique.
+                                Il est par ailleurs directeur du Groupe
+                                Interdisciplinaire de Recherches sur les
+                                Organisations (GIRO Bénin), il s&apos;investit
+                                aussi dans la recherche scientifique et la
+                                formation des futurs leaders africains en
+                                gouvernance et gestion publique.
                             </p>
                         </div>
                         <div className="mt-8 flex flex-wrap gap-4">
                             <Link
-                                href="/qui-est-dr-yasso"
+                                href="/qui-sommes-nous"
                                 className="btn-primary">
                                 <span>Découvrir sa biographie</span>
                             </Link>
@@ -131,7 +132,7 @@ export default function HomePage() {
                         <SectionHeader
                             label="Domaines d'expertise"
                             title="Audit & Gouvernance"
-                            subtitle="18 ans d'expérience au service du secteur public et privé, garantissant la transparence, l'intégrité et la performance."
+                            subtitle="Depuis 2008 au service des secteurs public et privé, garantissant la transparence, l'intégrité et la performance."
                             centered
                         />
                     </div>
@@ -149,10 +150,10 @@ export default function HomePage() {
                                     Audit & Contrôle
                                 </h3>
                                 <p className="font-body text-sm text-white/70">
-                                    Audit comptable, financier et de performance.
-                                    Auditeur de 30+ grandes entreprises et organismes
-                                    gouvernementaux. Expert certifié en contrôle de
-                                    gestion.
+                                    Audit comptable, financier et de
+                                    performance. Auditeur de plusieurs
+                                    organisations public et privées . Expert
+                                    certifié en contrôle de gestion.
                                 </p>
                             </div>
                         </div>
@@ -170,10 +171,14 @@ export default function HomePage() {
                                     Gouvernance
                                 </h3>
                                 <p className="font-body text-sm text-white/70">
-                                    Expert en gouvernance d'entreprise et gestion
-                                    publique. Inspecteur Général au Ministère des
-                                    Affaires Étrangères depuis 2017. Superviseur de 9
-                                    Ambassades.
+                                    Expert en gouvernance d'entreprise et
+                                    gestion publique. Inspecteur Général au
+                                    Ministère des Affaires Étrangères depuis
+                                    2015. Il contribue à l'amélioration de la
+                                    gouvernance des services centraux du
+                                    ministère ainsi que des poste diplomatique
+                                    et consulaire du Bénin à l'étranger
+                                    (Ambassade et consulat généraux).
                                 </p>
                             </div>
                         </div>
@@ -188,13 +193,23 @@ export default function HomePage() {
                         <SectionHeader
                             label="Ses engagements"
                             title="Ce en quoi il croit"
-                            subtitle="Six piliers fondamentaux qui guident chaque action, chaque décision et chaque combat de Dr Désiré YASSO."
+                            subtitle="cinq piliers fondamentaux qui guident chaque action, chaque décision et chaque combat de Dr Désiré YASSO."
                             light
                         />
                     </div>
                     <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
                         {VALUES.map((v, i) => (
-                            <ValueCard key={i} {...v} index={i} />
+                            <div
+                                key={i}
+                                className={i >= 3 ? "col-span-1 sm:col-span-1 flex justify-center" : ""}>
+                                {i >= 3 ? (
+                                    <div className="w-full max-w-sm">
+                                        <ValueCard {...v} index={i} />
+                                    </div>
+                                ) : (
+                                    <ValueCard {...v} index={i} />
+                                )}
+                            </div>
                         ))}
                     </div>
                 </div>
@@ -242,8 +257,9 @@ export default function HomePage() {
                     <div className="w-16 h-[3px] bg-white/50 mx-auto mb-6" />
                     <p className="font-body text-xl text-white/80 max-w-2xl mx-auto mb-10 leading-relaxed">
                         Dr Désiré YASSO met son expertise au service de la bonne
-                        gouvernance et de la transparence dans la gestion publique.
-                        Pour plus d&apos;informations ou pour collaborer, contactez-le.
+                        gouvernance et de la transparence dans la gestion
+                        publique. Pour plus d&apos;informations ou pour
+                        collaborer, contactez-le.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <Link
@@ -255,7 +271,7 @@ export default function HomePage() {
                             </span>
                         </Link>
                         <Link
-                            href="/qui-est-dr-yasso"
+                            href="/qui-sommes-nous"
                             className="inline-flex items-center justify-center gap-2 px-10 py-4 border-2 border-white text-white font-body font-600 text-sm tracking-widest uppercase transition-all duration-300 hover:bg-white hover:text-[#C89B3C]">
                             <span>Découvrir son parcours</span>
                         </Link>

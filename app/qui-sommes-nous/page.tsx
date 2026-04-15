@@ -31,10 +31,9 @@ export default function BiographiePage() {
                     <h1 className="font-display text-5xl md:text-7xl font-900 text-white leading-tight mb-4">
                         Qui sommes nous ?
                         <br />
-                        <span className="text-shimmer">YASSO ?</span>
                     </h1>
                     <p className="font-body text-lg text-white/60 max-w-xl">
-                        De Cotonou à la gouvernance internationale —
+                        De Kouarfa à la gouvernance internationale —
                         l&apos;itinéraire d&apos;un expert au service de la
                         transparence publique.
                     </p>
@@ -62,7 +61,7 @@ export default function BiographiePage() {
                         <div className="space-y-4 text-gray-600 font-body leading-relaxed">
                             <p>
                                 Dr Désiré YASSO est né le 16 avril 1983 à
-                                Cotonou, Bénin. Depuis ses études, il s&apos;est
+                                Kouarfa, Bénin. Depuis ses études, il s&apos;est
                                 attaché à maîtriser les mécanismes de la
                                 gouvernance publique et de l&apos;audit,
                                 domaines qui structurent la transparence et

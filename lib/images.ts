@@ -8,7 +8,7 @@ export const IMAGES = {
     // Présentation - page d'accueil
     homePresentation: '/image/img3.jpeg',
 
-    // Biographie - page qui-est-dr-yasso
+    // Biographie - page qui-sommes-nous
     bioHeroBackground: '/image/img1.jpeg',
     bioPortrait: '/image/img2.jpeg',
 

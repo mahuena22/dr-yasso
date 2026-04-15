@@ -51,9 +51,7 @@ export default function HeroSection() {
                         }`}
                         style={{ transitionDelay: '0.1s' }}>
                         <div className="w-8 h-[2px] bg-[#C89B3C]" />
-                        <span className="font-mono text-xs text-[#C89B3C] tracking-[0.3em] uppercase">
-                            Inspecteur Général · Audit & Gouvernance · Bénin
-                        </span>
+                        <span className="font-mono text-xs text-[#C89B3C] tracking-[0.3em] uppercase"></span>
                     </div>
 
                     {/* Main title */}
@@ -64,9 +62,8 @@ export default function HeroSection() {
                                 : 'opacity-0 translate-y-8'
                         }`}
                         style={{ transitionDelay: '0.25s' }}>
-                        Dr Désiré
-                        <br />
-                        <span className="text-shimmer">YASSO</span>
+                        Désiré
+                        <span className="text-shimmer"> YASSO</span>
                     </h1>
 
                     {/* Subtitle */}
@@ -77,7 +74,8 @@ export default function HeroSection() {
                                 : 'opacity-0 translate-y-6'
                         }`}
                         style={{ transitionDelay: '0.4s' }}>
-                        Expert en audit et gouvernance.
+                        Docteur en science de gestion-Expert en gouvernance et
+                        audit .
                     </p>
                     <p
                         className={`font-body text-base text-white/50 leading-relaxed mb-10 max-w-lg transition-all duration-700 ${
@@ -86,10 +84,10 @@ export default function HeroSection() {
                                 : 'opacity-0 translate-y-6'
                         }`}
                         style={{ transitionDelay: '0.5s' }}>
-                        18 ans d&apos;expérience en audit, gouvernance
+                        plusieurs années d&apos;expérience en audit, gouvernance
                         d&apos;entreprise et contrôle de gestion publique.
-                        Doctorat en Sciences de Gestion. Engagé pour la
-                        transparence et l&apos;excellence administrative.
+                        Doctorat en Science de Gestion. Engagé pour le
+                        developpement culturel et sociaux économique du Bénin
                     </p>
 
                     {/* CTAs */}
@@ -101,7 +99,7 @@ export default function HeroSection() {
                         }`}
                         style={{ transitionDelay: '0.65s' }}>
                         <Link
-                            href="/qui-est-dr-yasso"
+                            href="/qui-sommes-nous"
                             className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#C89B3C] text-white font-body font-600 text-sm tracking-widest uppercase transition-all duration-300 hover:bg-[#9E7B2E] hover:shadow-2xl hover:shadow-[#C89B3C]/30 group">
                             <span>Découvrir son parcours</span>
                             <span className="transition-transform duration-200 group-hover:translate-x-1">
