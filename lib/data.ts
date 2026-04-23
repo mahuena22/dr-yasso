@@ -189,9 +189,9 @@ export const ARTICLES: Article[] = [
     {
         id: '3',
         slug: 'audit-ambassades-bj',
-        title: 'Parainage de la fete des tamtams à Kokokou dans la commune de thoucountoumin',
+        title: 'Parainage de la fete des tamtams à Kokokou dans la commune de toucountouna',
         excerpt:
-            ' Dr Désiré YASSO parraine la fête des tamtams à Kokokou, commune de Thoucountoumin, célébrant la culture locale et renforçant les liens communautaires dans la 4e circonscription électorale.',
+            ' Dr Désiré YASSO parraine la fête des tamtams à Kokokou, commune de Toucountouna, célébrant la culture locale et renforçant les liens communautaires dans la 4e circonscription électorale.',
         content: ' Parainage de la fete des tamtams à Kokokou...',
         category: ' Audit',
         date: '15 mars 2026',
@@ -231,7 +231,7 @@ export const ARTICLES: Article[] = [
         excerpt:
             ' Dr Désiré YASSO lance le mouvement départemental des jeunes de l&apos;Union Progressiste de l&apos;Atacora, mobilisant la jeunesse pour un engagement politique actif et le développement de la région.',
         content:
-            ' Lancement du mouvement départemental des jeunes de l&apos;union progressiste de l&apos;Atacora...',
+            ' Lancement du mouvement départemental des jeunes Union Progressiste le Renouveau',
         category: 'Gouvernance',
         date: '22 janvier 2026',
         readTime: 5,

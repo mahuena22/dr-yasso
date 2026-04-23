@@ -73,11 +73,11 @@ export default function BiographiePage() {
                                 Gestion de l&apos;Université Paris 1
                                 Panthéon-Sorbonne (2014), spécialisé en
                                 gouvernance d&apos;entreprise et audit-contrôle,
-                                Dr YASSO apporte 18 années d&apos;expérience
+                                Dr YASSO apporte une vingtaine d'année d&apos;expérience
                                 cumulée dans l&apos;audit, le contrôle de
                                 gestion et la gouvernance. Il est notamment
                                 Inspecteur Général du Ministère des Affaires
-                                Étrangères du Bénin depuis juillet 2017.
+                                Étrangères du Bénin depuiS 2015.
                             </p>
                             <p>
                                 Directeur du Groupe Interdisciplinaire de
@@ -86,8 +86,7 @@ export default function BiographiePage() {
                                 auteur de plusieurs publications scientifiques
                                 sur la gouvernance publique, la corruption et
                                 l&apos;efficacité administrative en Afrique, il
-                                combine engagement académique et expertise
-                                pratique au gouvernement.
+                                combine engagement et expertise .
                             </p>
                             <p>
                                 Spécialiste en gouvernance d&apos;entreprise,
@@ -116,7 +115,7 @@ export default function BiographiePage() {
                                     sub: 'Depuis décembre 2015',
                                 },
                                 {
-                                    title: 'Conseiller Communal Kouarfa',
+                                    title: 'Conseiller Communal Toucountouna',
                                     sub: 'Atakora, 2026-2033',
                                 },
                             ].map((item, i) => (
