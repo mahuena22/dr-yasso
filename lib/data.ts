@@ -227,9 +227,9 @@ export const ARTICLES: Article[] = [
     {
         id: '6',
         slug: 'mouvement-jeunes-union-progressiste-atacora',
-        title: 'Lancement du mouvement départemental des jeunes de l&apos;union progressiste de l&apos;Atacora',
+        title: "Lancement du mouvement départemental des jeunes de l'union progressiste le Renouveau",
         excerpt:
-            ' Dr Désiré YASSO lance le mouvement départemental des jeunes de l&apos;Union Progressiste de l&apos;Atacora, mobilisant la jeunesse pour un engagement politique actif et le développement de la région.',
+            " Dr Désiré YASSO lance le mouvement départemental des jeunes de l'Union Progressiste le Renouveau, mobilisant la jeunesse pour un engagement politique actif et le développement de la région.",
         content:
             ' Lancement du mouvement départemental des jeunes Union Progressiste le Renouveau',
         category: 'Gouvernance',
