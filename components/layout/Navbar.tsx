@@ -2,6 +2,7 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import { ArrowUpRight, Menu, X } from 'lucide-react'
 
 const NAV_LINKS = [
     { href: '/', label: 'Accueil' },
@@ -87,21 +88,14 @@ export default function Navbar() {
                             href="/nous-soutenir"
                             className="hidden md:inline-flex items-center gap-2 px-5 py-2.5 bg-[#C89B3C] text-white font-body text-sm font-600 tracking-wider uppercase transition-all duration-300 hover:bg-[#9E7B2E] hover:shadow-lg animate-pulse-gold">
                             <span>Nous soutenir</span>
+                            <ArrowUpRight size={16} strokeWidth={1.8} aria-hidden="true" />
                         </Link>
 
                         <button
                             onClick={() => setMenuOpen(v => !v)}
-                            className={`lg:hidden flex flex-col gap-1.5 p-2 ${menuOpen ? 'hamburger-open' : ''}`}
-                            aria-label="Menu">
-                            <span
-                                className={`hamburger-line text-white ${menuOpen ? 'line-1' : ''}`}
-                            />
-                            <span
-                                className={`hamburger-line text-white ${menuOpen ? 'line-2' : ''}`}
-                            />
-                            <span
-                                className={`hamburger-line text-white ${menuOpen ? 'line-3' : ''}`}
-                            />
+                            className="lg:hidden flex items-center justify-center p-2 text-white"
+                            aria-label={menuOpen ? 'Fermer le menu' : 'Ouvrir le menu'}>
+                            {menuOpen ? <X size={25} aria-hidden="true" /> : <Menu size={25} aria-hidden="true" />}
                         </button>
                     </div>
                 </div>

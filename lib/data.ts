@@ -1,4 +1,5 @@
-import { title } from 'process'
+import type { LucideIcon } from 'lucide-react'
+import { BarChart3, BookOpen, GraduationCap, Handshake, Landmark, Scale, ShieldCheck, Globe2 } from 'lucide-react'
 
 // ─── Types ──────────────────────────────────────────────────────────────────
 export interface Article {
@@ -15,7 +16,7 @@ export interface Article {
 }
 
 export interface Value {
-    icon: string
+    icon: LucideIcon
     title: string
     description: string
 }
@@ -129,31 +130,31 @@ export const TIMELINE: TimelineItem[] = [
 
 export const VALUES: Value[] = [
     {
-        icon: '⚖️',
+        icon: Scale,
         title: 'intégrité ',
         description:
             " Engagement inébranlable envers l'intégrité, la transparence et l'éthique dans toutes les actions professionnelles et publiques.",
     },
     {
-        icon: '📊',
+        icon: BarChart3,
         title: 'Compétence',
         description:
             ' Expertise reconnue en audit, gouvernance publique et gestion organisationnelle, avec plusieurs années dexpérience  dans des contextes complexes.',
     },
     {
-        icon: '📚',
+        icon: BookOpen,
         title: 'Rigueur',
         description:
             " Approche méthodique et rigoureuse dans l'analyse, la recherche et la prise de décision, assurant des résultats fiables et de haute qualité.",
     },
     {
-        icon: '🏛️',
+        icon: Landmark,
         title: 'Loyauté',
         description:
             ' Loyauté indéfectible envers les institutions publiques béninoises, avec un engagement profond pour le service public et le développement national.',
     },
     {
-        icon: '🤝',
+        icon: Handshake,
         title: 'Action',
         description:
             " Engagé dans l'action concrète pour le développement du Bénin, contribuant activement à la mise en œuvre de politiques publiques efficaces.",
@@ -248,9 +249,9 @@ export const CATEGORIES = [
     'Diplomatie',
 ]
 
-export const STATS = [
-    { number: '18+', label: "Années d'expérience en audit", icon: '📊' },
-    { number: '30+', label: 'Entreprises & ministères auditées', icon: '✅' },
-    { number: '30+', label: 'Ambassade & Consulat supervisés', icon: '🌍' },
-    { number: '1', label: 'Doctorat', icon: '🎓' },
+export const STATS: { number: string; label: string; icon: LucideIcon }[] = [
+    { number: '18+', label: "Années d'expérience en audit", icon: BarChart3 },
+    { number: '30+', label: 'Entreprises & ministères auditées', icon: ShieldCheck },
+    { number: '30+', label: 'Ambassade & Consulat supervisés', icon: Globe2 },
+    { number: '1', label: 'Doctorat', icon: GraduationCap },
 ]

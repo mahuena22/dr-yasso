@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import '@/styles/globals.css'
+import 'boxicons/css/boxicons.min.css'
 import { IMAGES } from '@/lib/images'
 import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/layout/Footer'

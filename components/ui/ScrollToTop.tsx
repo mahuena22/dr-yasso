@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
+import { ArrowUp } from "lucide-react";
 
 export default function ScrollToTop() {
   const [visible, setVisible] = useState(false);
@@ -18,9 +19,7 @@ export default function ScrollToTop() {
       }`}
       aria-label="Retour en haut"
     >
-      <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
-        <path d="M8 3L14 10H2L8 3Z" />
-      </svg>
+      <ArrowUp size={18} strokeWidth={2} aria-hidden="true" />
     </button>
   );
 }

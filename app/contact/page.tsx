@@ -2,6 +2,7 @@
 import { useState, useEffect } from 'react'
 import { SITE_CONFIG } from '@/lib/data'
 import { useScrollReveal } from '@/lib/useScrollReveal'
+import { CheckCircle2, Clock3, Loader2, Mail, MapPin, Phone, Send } from 'lucide-react'
 
 interface FormData {
     nom: string
@@ -111,22 +112,22 @@ export default function ContactPage() {
 
                         {[
                             {
-                                icon: '📍',
+                                icon: MapPin,
                                 label: 'Adresse',
                                 value: SITE_CONFIG.address,
                             },
                             {
-                                icon: '📧',
+                                icon: Mail,
                                 label: 'Email',
                                 value: SITE_CONFIG.email,
                             },
                             {
-                                icon: '📞',
+                                icon: Phone,
                                 label: 'Téléphone',
                                 value: SITE_CONFIG.phone,
                             },
                             {
-                                icon: '🕐',
+                                icon: Clock3,
                                 label: 'Disponibilité',
                                 value: 'Lun – Ven, 8h – 17h (heure locale)',
                             },
@@ -134,9 +135,7 @@ export default function ContactPage() {
                             <div
                                 key={i}
                                 className="flex gap-4 p-4 border border-gray-100 hover:border-[#C89B3C]/30 transition-all duration-200">
-                                <span className="text-2xl flex-shrink-0">
-                                    {item.icon}
-                                </span>
+                                <item.icon size={24} className="text-[#C89B3C] flex-shrink-0" strokeWidth={1.7} aria-hidden="true" />
                                 <div>
                                     <div className="font-mono text-[10px] tracking-[0.2em] uppercase text-gray-400 mb-1">
                                         {item.label}
@@ -178,7 +177,7 @@ export default function ContactPage() {
                     <div className="lg:col-span-2 reveal-right">
                         {submitted ? (
                             <div className="flex flex-col items-center justify-center py-20 text-center">
-                                <div className="text-6xl mb-6">✅</div>
+                                <CheckCircle2 size={56} className="text-[#C89B3C] mb-6" strokeWidth={1.5} aria-hidden="true" />
                                 <h3 className="font-display text-3xl font-700 text-[#0D2B5B] mb-3">
                                     Message envoyé !
                                 </h3>
@@ -350,11 +349,14 @@ export default function ContactPage() {
                                     className="w-full py-4 bg-[#0D2B5B] text-white font-body font-600 text-sm tracking-widest uppercase transition-all duration-300 hover:bg-[#C89B3C] disabled:opacity-60 disabled:cursor-not-allowed flex items-center justify-center gap-3">
                                     {submitting ? (
                                         <>
-                                            <span className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin" />
+                                            <Loader2 size={18} className="animate-spin" aria-hidden="true" />
                                             <span>Envoi en cours…</span>
                                         </>
                                     ) : (
-                                        <span>Envoyer le message →</span>
+                                        <>
+                                            <span>Envoyer le message</span>
+                                            <Send size={16} aria-hidden="true" />
+                                        </>
                                     )}
                                 </button>
 

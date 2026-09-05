@@ -4,6 +4,7 @@ import { IMAGES } from '@/lib/images'
 import { ARTICLES, CATEGORIES } from '@/lib/data'
 import { ArticleCard, SectionHeader } from '@/components/ui'
 import { useScrollReveal } from '@/lib/useScrollReveal'
+import { ArrowLeft, ArrowRight } from 'lucide-react'
 
 export default function ActualitesPage() {
     useScrollReveal()
@@ -124,7 +125,7 @@ export default function ActualitesPage() {
                                 }
                                 disabled={currentPage === 1}
                                 className="px-4 py-2 bg-white border border-gray-200 text-gray-500 font-mono text-xs disabled:opacity-30 hover:border-[#C89B3C] transition-colors">
-                                ← Précédent
+                                <ArrowLeft size={15} aria-hidden="true" /> Précédent
                             </button>
                             {Array.from(
                                 { length: totalPages },
@@ -149,7 +150,7 @@ export default function ActualitesPage() {
                                 }
                                 disabled={currentPage === totalPages}
                                 className="px-4 py-2 bg-white border border-gray-200 text-gray-500 font-mono text-xs disabled:opacity-30 hover:border-[#C89B3C] transition-colors">
-                                Suivant →
+                                Suivant <ArrowRight size={15} aria-hidden="true" />
                             </button>
                         </div>
                     )}

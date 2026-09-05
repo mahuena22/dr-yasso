@@ -2,6 +2,7 @@
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
 import { IMAGES } from '@/lib/images'
+import { ArrowRight } from 'lucide-react'
 
 export default function HeroSection() {
     const [loaded, setLoaded] = useState(false)
@@ -103,7 +104,7 @@ export default function HeroSection() {
                             className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#C89B3C] text-white font-body font-600 text-sm tracking-widest uppercase transition-all duration-300 hover:bg-[#9E7B2E] hover:shadow-2xl hover:shadow-[#C89B3C]/30 group">
                             <span>Découvrir son parcours</span>
                             <span className="transition-transform duration-200 group-hover:translate-x-1">
-                                →
+                                <ArrowRight size={17} aria-hidden="true" />
                             </span>
                         </Link>
                         <Link

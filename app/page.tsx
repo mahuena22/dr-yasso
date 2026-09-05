@@ -11,6 +11,7 @@ import {
 } from '@/components/ui'
 import { STATS, VALUES, ARTICLES } from '@/lib/data'
 import { useScrollReveal } from '@/lib/useScrollReveal'
+import { ArrowRight, BarChart3, Landmark } from 'lucide-react'
 
 export default function HomePage() {
     useScrollReveal()
@@ -141,7 +142,7 @@ export default function HomePage() {
                         <div className="relative overflow-hidden group reveal-left">
                             <div className="aspect-[16/10] overflow-hidden bg-[#0D2B5B]">
                                 <div className="w-full h-full flex items-center justify-center">
-                                    <div className="text-6xl">📊</div>
+                                    <BarChart3 size={64} className="text-[#C89B3C]" strokeWidth={1.2} aria-hidden="true" />
                                 </div>
                             </div>
                             <div className="absolute inset-0 bg-gradient-to-t from-[#0D2B5B]/90 to-transparent" />
@@ -162,7 +163,7 @@ export default function HomePage() {
                         <div className="relative overflow-hidden group reveal-right">
                             <div className="aspect-[16/10] overflow-hidden bg-[#0D2B5B]">
                                 <div className="w-full h-full flex items-center justify-center">
-                                    <div className="text-6xl">🏛️</div>
+                                    <Landmark size={64} className="text-[#C89B3C]" strokeWidth={1.2} aria-hidden="true" />
                                 </div>
                             </div>
                             <div className="absolute inset-0 bg-gradient-to-t from-[#0D2B5B]/90 to-transparent" />
@@ -267,7 +268,7 @@ export default function HomePage() {
                             className="inline-flex items-center justify-center gap-2 px-10 py-4 bg-[#0D2B5B] text-white font-body font-600 text-sm tracking-widest uppercase transition-all duration-300 hover:bg-[#081D3E] hover:shadow-2xl group">
                             <span>Nous Contacter</span>
                             <span className="transition-transform duration-200 group-hover:translate-x-1">
-                                →
+                                <ArrowRight size={16} aria-hidden="true" />
                             </span>
                         </Link>
                         <Link

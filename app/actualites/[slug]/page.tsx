@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import { ArticleCard } from '@/components/ui'
 import type { Metadata } from 'next'
+import { ArrowRight } from 'lucide-react'
 
 interface Props {
     params: Promise<{ slug: string }>
@@ -284,7 +285,7 @@ export default async function ArticleDetailPage({ params }: Props) {
                                         {cat}
                                     </span>
                                     <span className="font-mono text-xs text-gray-300">
-                                        →
+                                        <ArrowRight size={16} aria-hidden="true" />
                                     </span>
                                 </Link>
                             ))}
@@ -331,7 +332,7 @@ export default async function ArticleDetailPage({ params }: Props) {
                             <Link
                                 href="/actualites"
                                 className="hidden sm:flex items-center gap-2 text-[#C89B3C] font-body text-sm font-600 hover:gap-3 transition-all">
-                                Toutes les actualités <span>→</span>
+                                Toutes les actualités <ArrowRight size={16} aria-hidden="true" />
                             </Link>
                         </div>
                         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">

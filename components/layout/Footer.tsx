@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { SITE_CONFIG } from '@/lib/data'
+import { Mail, MapPin, Phone, ArrowRight } from 'lucide-react'
 
 const QUICK_LINKS = [
     { href: '/', label: 'Accueil' },
@@ -10,10 +11,10 @@ const QUICK_LINKS = [
 ]
 
 const SOCIAL = [
-    { label: 'Facebook', icon: 'f', href: SITE_CONFIG.social.facebook },
-    { label: 'Twitter / X', icon: '𝕏', href: SITE_CONFIG.social.twitter },
-    { label: 'Instagram', icon: '◉', href: SITE_CONFIG.social.instagram },
-    { label: 'YouTube', icon: '▶', href: SITE_CONFIG.social.youtube },
+    { label: 'Facebook', icon: 'bxl-facebook', href: SITE_CONFIG.social.facebook },
+    { label: 'Twitter / X', icon: 'bxl-twitter', href: SITE_CONFIG.social.twitter },
+    { label: 'Instagram', icon: 'bxl-instagram', href: SITE_CONFIG.social.instagram },
+    { label: 'YouTube', icon: 'bxl-youtube', href: SITE_CONFIG.social.youtube },
 ]
 
 export default function Footer() {
@@ -64,7 +65,7 @@ export default function Footer() {
                                 href={s.href}
                                 aria-label={s.label}
                                 className="w-9 h-9 border border-white/20 flex items-center justify-center text-white/50 hover:border-[#C89B3C] hover:text-[#C89B3C] transition-all duration-300 text-sm font-bold">
-                                {s.icon}
+                                <i className={`bx ${s.icon} text-lg`} aria-hidden="true" />
                             </a>
                         ))}
                     </div>
@@ -81,7 +82,7 @@ export default function Footer() {
                                 <Link
                                     href={l.href}
                                     className="text-white/60 hover:text-white font-body text-sm transition-colors duration-200 flex items-center gap-2 group">
-                                    <span className="w-3 h-[1px] bg-[#C89B3C] transition-all duration-300 group-hover:w-5" />
+                                    <ArrowRight size={14} className="text-[#C89B3C] transition-transform duration-300 group-hover:translate-x-1" aria-hidden="true" />
                                     {l.label}
                                 </Link>
                             </li>
@@ -96,19 +97,19 @@ export default function Footer() {
                     </h4>
                     <ul className="space-y-2 text-white/60 font-body text-sm">
                         <li className="flex items-center gap-2">
-                            <span className="text-[#6EC6FF]">◆</span> Natitingou
+                            <MapPin size={15} className="text-[#6EC6FF]" aria-hidden="true" /> Natitingou
                             (Chef-lieu)
                         </li>
                         <li className="flex items-center gap-2">
-                            <span className="text-[#6EC6FF]">◆</span>{' '}
+                            <MapPin size={15} className="text-[#6EC6FF]" aria-hidden="true" />{' '}
                             Toucountouna
                         </li>
                         <li className="flex items-center gap-2">
-                            <span className="text-[#6EC6FF]">◆</span> Villages
+                            <MapPin size={15} className="text-[#6EC6FF]" aria-hidden="true" /> Villages
                             périphériques
                         </li>
                         <li className="flex items-center gap-2">
-                            <span className="text-[#6EC6FF]">◆</span> Région de
+                            <MapPin size={15} className="text-[#6EC6FF]" aria-hidden="true" /> Région de
                             l&apos;Atacora
                         </li>
                     </ul>
@@ -124,7 +125,7 @@ export default function Footer() {
                             <span className="block text-white/30 text-xs mb-1 uppercase tracking-wider">
                                 Adresse
                             </span>
-                            Natitingou, Atacora, Bénin
+                            <span className="inline-flex items-center gap-2"><MapPin size={14} aria-hidden="true" /> Natitingou, Atacora, Bénin</span>
                         </li>
                         <li>
                             <span className="block text-white/30 text-xs mb-1 uppercase tracking-wider">
@@ -133,14 +134,14 @@ export default function Footer() {
                             <a
                                 href={`mailto:${SITE_CONFIG.email}`}
                                 className="hover:text-[#C89B3C] transition-colors">
-                                {SITE_CONFIG.email}
+                                <span className="inline-flex items-center gap-2"><Mail size={14} aria-hidden="true" /> {SITE_CONFIG.email}</span>
                             </a>
                         </li>
                         <li>
                             <span className="block text-white/30 text-xs mb-1 uppercase tracking-wider">
                                 Téléphone
                             </span>
-                            {SITE_CONFIG.phone}
+                            <span className="inline-flex items-center gap-2"><Phone size={14} aria-hidden="true" /> {SITE_CONFIG.phone}</span>
                         </li>
                     </ul>
                 </div>

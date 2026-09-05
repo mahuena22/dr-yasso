@@ -3,10 +3,11 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { IMAGES } from "@/lib/images";
 import { useScrollReveal } from "@/lib/useScrollReveal";
+import { ArrowRight, BookOpen, BriefcaseBusiness, Handshake, School } from "lucide-react";
 
 const SUPPORT_WAYS = [
   {
-    icon: "🤝",
+    icon: Handshake,
     title: "Partenariats Professionnels",
     description:
       "Institutions publiques, organisations privées, universités. Explorons ensemble les opportunités de collaboration en audit, gouvernance et recherche académique.",
@@ -15,7 +16,7 @@ const SUPPORT_WAYS = [
     href: "/contact",
   },
   {
-    icon: "📚",
+    icon: BookOpen,
     title: "Recherche & Publications",
     description:
       "Collaborations académiques, publications scientifiques, séminaires et conférences. Contribuez à l'avancement des connaissances en gouvernance publique.",
@@ -24,7 +25,7 @@ const SUPPORT_WAYS = [
     href: "/contact",
   },
   {
-    icon: "🏫",
+    icon: School,
     title: "Formations & Ateliers",
     description:
       "Programmes de formation en audit, contrôle de gestion et gouvernance. Renforcez les capacités de vos équipes avec un expert reconnu.",
@@ -33,7 +34,7 @@ const SUPPORT_WAYS = [
     href: "/contact",
   },
   {
-    icon: "💼",
+    icon: BriefcaseBusiness,
     title: "Expertise & Conseil",
     description:
       "Services d'audit et de conseil en gouvernance. Bénéficiez d'une expérience de 18 ans en amélioration de la gestion publique et privée.",
@@ -108,7 +109,7 @@ export default function NousSoutenirPage() {
                 key={i}
                 className={`reveal delay-${(i + 1) * 100} group bg-white border border-gray-100 p-7 flex flex-col card-hover`}
               >
-                <div className="text-5xl mb-4">{way.icon}</div>
+                <way.icon size={42} className="text-[#C89B3C] mb-4" strokeWidth={1.5} aria-hidden="true" />
                 <h3 className="font-display text-xl font-700 text-[#0D2B5B] mb-3 group-hover:text-[#C89B3C] transition-colors duration-200">
                   {way.title}
                 </h3>
@@ -120,7 +121,8 @@ export default function NousSoutenirPage() {
                   href={way.href}
                   className={`${way.color} text-white text-center py-3 font-body text-xs font-600 tracking-widest uppercase transition-all duration-200 hover:opacity-90`}
                 >
-                  {way.action}
+                  <span>{way.action}</span>
+                  <ArrowRight size={15} aria-hidden="true" />
                 </Link>
               </div>
             ))}

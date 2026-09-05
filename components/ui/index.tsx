@@ -1,5 +1,7 @@
 import Link from 'next/link'
 import { ReactNode } from 'react'
+import { ArrowRight } from 'lucide-react'
+import type { LucideIcon } from 'lucide-react'
 
 // ── SectionHeader ────────────────────────────────────────────────
 interface SectionHeaderProps {
@@ -82,13 +84,14 @@ export function GoldButton({
 interface StatCardProps {
     number: string
     label: string
-    icon: string
+    icon: LucideIcon
 }
 
 export function StatCard({ number, label, icon }: StatCardProps) {
+    const Icon = icon
     return (
         <div className="text-center group">
-            <div className="text-3xl mb-2">{icon}</div>
+            <Icon size={30} className="mx-auto mb-2 text-[#C89B3C]" strokeWidth={1.6} aria-hidden="true" />
             <div className="font-display text-4xl md:text-5xl font-900 text-[#C89B3C] leading-none">
                 {number}
             </div>
@@ -149,9 +152,7 @@ export function ArticleCard({
                 </p>
                 <div className="mt-5 flex items-center gap-2 text-[#C89B3C] font-body text-sm font-600 tracking-wide">
                     <span>Lire l&apos;article</span>
-                    <span className="transition-transform duration-200 group-hover:translate-x-1">
-                        →
-                    </span>
+                    <ArrowRight size={16} className="transition-transform duration-200 group-hover:translate-x-1" aria-hidden="true" />
                 </div>
             </div>
         </Link>
@@ -160,7 +161,7 @@ export function ArticleCard({
 
 // ── ValueCard ─────────────────────────────────────────────────────
 interface ValueCardProps {
-    icon: string
+    icon: LucideIcon
     title: string
     description: string
     index?: number
@@ -172,11 +173,12 @@ export function ValueCard({
     description,
     index = 0,
 }: ValueCardProps) {
+    const Icon = icon
     return (
         <div
             className="p-8 border border-white/10 bg-white/5 hover:bg-white/10 transition-all duration-300 group reveal"
             style={{ transitionDelay: `${index * 80}ms` }}>
-            <div className="text-4xl mb-4">{icon}</div>
+            <Icon size={38} className="mb-4 text-[#C89B3C]" strokeWidth={1.5} aria-hidden="true" />
             <h3 className="font-display text-xl font-700 text-white mb-3 group-hover:text-[#C89B3C] transition-colors duration-200">
                 {title}
             </h3>

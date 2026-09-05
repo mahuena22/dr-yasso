@@ -4,6 +4,7 @@ import { IMAGES } from '@/lib/images'
 import { TIMELINE, VALUES } from '@/lib/data'
 import { SectionHeader, ValueCard } from '@/components/ui'
 import { useScrollReveal } from '@/lib/useScrollReveal'
+import { MapPin } from 'lucide-react'
 
 export default function BiographiePage() {
     useScrollReveal()
@@ -177,7 +178,7 @@ export default function BiographiePage() {
                                             </div>
                                             {item.location && (
                                                 <span className="font-mono text-xs text-gray-400 tracking-wide bg-gray-50 px-3 py-1 border border-gray-200">
-                                                    📍 {item.location}
+                                                    <MapPin size={14} className="inline-block mr-1 text-[#C89B3C]" aria-hidden="true" /> {item.location}
                                                 </span>
                                             )}
                                         </div>
